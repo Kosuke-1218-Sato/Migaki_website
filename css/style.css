@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F7F4EF;
+    color:#111;
+    font-family:'Cormorant Garamond', serif;
+}
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:35px 80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:100;
+}
+
+.logo img{
+    width:140px;
+    height:auto;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111;
+    font-size:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#B08A4E;
+}
+
+.hero{
+    height:100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("../images/hero.jpg") center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero-content{
+    max-width:700px;
+    padding:20px;
+}
+
+.hero h2{
+    font-family:'Cinzel', serif;
+    font-size:60px;
+    letter-spacing:8px;
+    margin-bottom:30px;
+    color:white;
+}
+
+.hero p{
+    font-size:28px;
+    line-height:1.7;
+    color:white;
+    margin-bottom:50px;
+}
+
+.button{
+    display:inline-block;
+
+    padding:18px 42px;
+
+    border:1px solid #B08A4E;
+
+    color:#B08A4E;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.button:hover{
+    background:#B08A4E;
+    color:white;
+}
+
+.about{
+    padding:140px 20px;
+    background:#F7F4EF;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+.about h2{
+    font-family:'Cinzel', serif;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.about p{
+    font-size:26px;
+    line-height:1.8;
+    max-width:700px;
+    color:#555;
+}
+.section-heading {
+    max-width: 680px;
+    margin-bottom: 64px;
+}
+
+.eyebrow,
+.product-type {
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #b08a4e;
+}
+
+.section-heading h2 {
+    margin: 16px 0 20px;
+    font-family: "Cinzel", serif;
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.section-intro {
+    font-size: 23px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.collection {
+    padding: 140px 20px;
+    background: #111;
+    color: #f7f4ef;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.product-card {
+    background: #191919;
+    overflow: hidden;
+}
+
+.product-image {
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+}
+
+.placeholder-image {
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(circle at center, #2d2a25 0%, #191919 65%);
+    color: #b08a4e;
+    font-family: "Cinzel", serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.product-info {
+    padding: 30px;
+}
+
+.product-info h3 {
+    margin: 12px 0 14px;
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.product-info p:not(.product-type) {
+    min-height: 58px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #c8c3bb;
+}
+
+.product-info a {
+    display: inline-block;
+    margin-top: 24px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #b08a4e;
+    color: #b08a4e;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.product-info a:hover {
+    opacity: 0.65;
+}
+
+@media (max-width:768px){
+
+    header{
+        padding:25px;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        gap:20px;
+    }
+
+    .hero h2{
+        font-size:42px;
+        letter-spacing:4px;
+    }
+
+    .hero p{
+        font-size:22px;
+    }
+
+    .about h2{
+        font-size:34px;
+    }
+
+    .about p{
+        font-size:22px;
+    }
+    .collection {
+    padding: 90px 20px;
+}
+
+.collection-grid {
+    grid-template-columns: 1fr;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-intro {
+    font-size: 20px;
+}
+
+.product-info p:not(.product-type) {
+    min-height: auto;
+}
+
+}
