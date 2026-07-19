@@ -48,15 +48,16 @@ nav a{
 }
 
 .hero{
-
     height:100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("images/hero.jpg") center/cover no-repeat;
 
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
 }
 
 .hero-content{
@@ -65,50 +66,44 @@ nav a{
 
 }
 
-.hero h2{
-
-    font-family:'Cinzel', serif;
-
-    font-size:60px;
-
-    letter-spacing:8px;
-
-    margin-bottom:30px;
-
-}
-
+.hero h2,
 .hero p{
-
-    font-size:28px;
-
-    line-height:1.7;
-
-    color:#555;
-
-    margin-bottom:50px;
-
+    color:white;
 }
 
 .button{
-
     display:inline-block;
-
     padding:18px 42px;
 
-    border:1px solid #111;
-
+    border:1px solid #B08A4E;
+    color:#B08A4E;
     text-decoration:none;
 
-    color:#111;
-
-    transition:.35s;
-
+    transition:.3s;
 }
 
 .button:hover{
-
-    background:#111;
-
+    background:#B08A4E;
     color:white;
+}
+.about{
+    padding:140px 20px;
+    background:#F7F4EF;
+}
 
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+.about h2{
+    font-family:"Cinzel", serif;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.about p{
+    font-size:26px;
+    line-height:1.8;
+    max-width:700px;
 }
