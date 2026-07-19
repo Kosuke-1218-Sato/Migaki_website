@@ -216,6 +216,59 @@ nav a:hover{
 .product-info a:hover {
     opacity: 0.65;
 }
+.craftsmanship {
+    padding: 140px 20px;
+    background: #f7f4ef;
+}
+
+.craftsmanship-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.craftsmanship-placeholder {
+    min-height: 620px;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(circle at center, #d8c8ac 0%, #b59b70 45%, #2a241d 100%);
+    color: #f7f4ef;
+    font-family: "Cinzel", serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.craftsmanship-content h2 {
+    margin: 16px 0 30px;
+    font-family: "Cinzel", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.craftsmanship-content p {
+    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 18px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #b08a4e;
+    color: #b08a4e;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.text-link:hover {
+    opacity: 0.65;
+}
 
 @media (max-width:768px){
 
@@ -263,6 +316,22 @@ nav a:hover{
 
 .product-info p:not(.product-type) {
     min-height: auto;
+}
+.craftsmanship {
+    padding: 90px 20px;
+}
+
+.craftsmanship-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+}
+
+.craftsmanship-placeholder {
+    min-height: 430px;
+}
+
+.craftsmanship-content p {
+    font-size: 20px;
 }
 
 }
